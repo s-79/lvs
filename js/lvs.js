@@ -42,7 +42,7 @@ $(document).ready(function () {
 			par = link.parent();
 			par.addClass('active').siblings().removeClass('active');
 			// ---------------------------------------------------------------- Arréter les autres players
-			for (let i = 1; i < 5; i++) {
+			for (let i = 1; i < 6; i++) {
 				$(`#audio${i}`)[0].pause()
 			};
 			player.load();
