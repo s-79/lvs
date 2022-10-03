@@ -3,4 +3,4 @@ Website of the french Punk Rock band https://www.lesvieillessalopes.com/
 
 
 # TECHNOLOGIES
-html, css, javascript
+javascript, html, css
