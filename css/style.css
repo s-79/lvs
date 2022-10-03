@@ -12,6 +12,22 @@ body, .modal-content, header {
     border-color: rgba(255, 255, 255, 0.25) !important;
 }
 
+/* ---------------------------------------------------------------------------- Scroll To top */
+.scroll-to-top {
+    display: inline-flex;
+    margin-left: 10px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #333;
+    justify-content: center;
+    align-items: center;
+}
+/* .scroll-to-top img {
+    width: 90%;
+} */
+
 /* ---------------------------------------------------------------------------- Polices */
 
 h1 {
@@ -54,6 +70,10 @@ a:hover {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+nav a {
+    cursor: pointer;
 }
 
 /* ---------------------------------------------------------------------------- Modal */
@@ -103,17 +123,6 @@ video {
   height: auto;
 }
 
-/* ---------------------------------------------------------------------------- Concerts */
-
-.carousel-inner{
-  /* max-height: 400px; */
-  max-width: 250px;
-}
-
-.carousel-control-prev, .carousel-control-next {
-  max-width: 25px;
-}
-
 /* ---------------------------------------------------------------------------- Responsive */
 
 @media (max-width: 991px) {
@@ -141,13 +150,13 @@ video {
 }
 
 @media (max-width: 553px) {
-    #spanPunkRock {
+    .punkRock {
         display: none;
     }
 }
 
 @media (max-width: 528px) {
-    #mailFooter {
+    #lcp {
         display: none;
     }
 }

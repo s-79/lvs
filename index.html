@@ -16,12 +16,12 @@
         <div class="cover-container d-flex w-100 h-100 px-3 pt-3 mx-auto flex-column">
             <header class="mt-2 mb-5 text-center">
                 <div>
-                    <h1 class="float-lg-start mb-1">Les Vieilles Salopes<span id="spanPunkRock" class="fw-light"><span class="px-3">|</span>Punk Rock</span></h1>
+                    <h1 class="float-lg-start mb-1">Les Vieilles Salopes<span class="punkRock px-3 fw-light">|</span><span class='punkRock fw-light'>Punk Rock</span></h1>
                     <nav class="nav nav-masthead justify-content-center float-lg-end">
-                        <a class="nav-link fw-bold py-1 px-1 active" aria-current="page" href="index.html">Musique</a>
-                        <a class="nav-link fw-bold py-1 px-1" href="#videos">Vidéos</a>
-                        <a class="nav-link fw-bold py-1 px-1" href="#concerts">Concerts</a>
-                        <a class="nav-link fw-bold py-1 px-1" href="#mailFooter">Contact</a>
+                        <a class="nav-link fw-bold py-1 px-1 active" aria-current="page" value="mainDiv">Musique</a>
+                        <a class="nav-link fw-bold py-1 px-1" value="#videosLink">Vidéos</a>
+                        <a class="nav-link fw-bold py-1 px-1" value="#concertsLink">Concerts</a>
+                        <a class="nav-link fw-bold py-1 px-1" value="#mailFooter">Contact</a>
                     </nav>
                 </div>
             </header>
@@ -38,7 +38,7 @@
                             <span id="commander" class="pointeur">Commander</span>
                         </span>
                     </h2>
-                    <div class="row mb-5">
+                    <div class="row mb-5 mt-3">
                         <div class="col-12 col-lg-6 text-center align-top pb-2">
                             <img class="img-fluid border border-1 border-light" src="img/jdtpt.jpg" alt="Jamais debout toujours par terre">
                         </div>
@@ -62,7 +62,7 @@
                             <a href="https://lesvieillessalopes.com/ogg/Les%20Vieilles%20Salopes%20-%202003%20-%20Aime%20moi%20tendre,%20aime%20moi%20vrai.zip">Télécharger</a>
                         </span>
                     </h2>
-                    <div class="row mb-5">
+                    <div class="row mb-5 mt-3">
                         <div class="col-12 col-lg-6 text-center align-top pb-2">
                             <img class="img-fluid border border-1 border-light" src="img/amtamv.jpg" alt="Aime-moi tendre, aime-moi vrai">
                         </div>
@@ -84,7 +84,7 @@
                             <a href="http://lesvieillessalopes.com/ogg/Les%20Vieilles%20Salopes%20-%2014%20reprises%20enregistr%C3%A9es%20en%20live.zip">Télécharger</a>
                         </span>
                     </h2>
-                    <div class="row mb-5">
+                    <div class="row mb-5 mt-3">
                         <div class="col-12 col-lg-6 text-center align-top pb-2">
                             <img class="img-fluid border border-1 border-light" src="img/live.jpg" alt="Les Vieilles Salopes en concert">
                         </div>
@@ -106,7 +106,7 @@
                             <a href="http://lesvieillessalopes.com/ogg/Les%20Vieilles%20Salopes%20-%20In%C3%A9dits,%20Reprises,%20Compils%20et%20D%C3%A9mos.zip">Télécharger</a>
                         </span>
                     </h2>
-                    <div class="row mb-5">
+                    <div class="row mb-5 mt-3">
                         <div class="col-12 col-lg-6 text-center align-top pb-2">
                             <img class="img-fluid border border-1 border-light" src="img/compils.jpg" alt="Reprises et compilations">
                         </div>
@@ -122,11 +122,11 @@
                             </div>
                         </div>
                     </div>
-                    <h2>[2001 - 2008]<span class="ps-2 pe-1 fw-bold text-uppercase">50 vidéos de concerts</span>
+                    <h2 id="videosLink">[2001 - 2008]<span class="ps-2 pe-1 fw-bold text-uppercase">50 vidéos de concerts</span>
                         <span id="videos" class="album"><span class="albumPipe pe-2 fw-bold text-white pe-2">→</span><span class="rouge pe-2">La nuit avec vous</span>le 26 oct. 2006 au Glazart - Paris
                         </span>
                     </h2>
-                    <div class="row mb-5">
+                    <div class="row mb-5 mt-3">
                         <div class="col-12 col-lg-6 text-center align-top pb-2">
                             <video id="audio5" class="border-light" width="400" height="320" controls preload="none" poster="img/videos.jpg">
                                 <source src="https://lesvieillessalopes.com/mp4/061026_Glazart_LaNuit.mp4" type="video/mp4">
@@ -139,11 +139,11 @@
                             </div>
                         </div>
                     </div>
-                    <h2>[2001 - 2008]<span class="ps-2 pe-1 fw-bold text-uppercase">Les dates de concerts</span>
+                    <h2 id="concertsLink">[2001 - 2008]<span class="ps-2 pe-1 fw-bold text-uppercase">Les dates de concerts</span>
                         <span id="concerts" class="album"><span class="fw-bold pe-2">→</span><span class="rouge">Au Picolo</span> avec Medef Inna Babylone & Le Bourgeoisie
                         </span>
                     </h2>
-                    <div class="row mb-3">
+                    <div class="row mb-2 mt-3">
                         <div id="flyer" class="col-12 col-lg-6 text-center align-top pb-2">
                             <img class="img-fluid border border-1 border-light" src="img/concerts.jpg" alt="">
                         </div>
@@ -158,16 +158,21 @@
             </main>
 
             <footer class="mt-auto text-center">
-                <p>La Chips Prod. 🄯
-                    <script>
-                        const currentTime = new Date();
-                        const year = currentTime.getFullYear()
-                        document.write(year);
-                    </script>
-                    <span id="mailFooter">
+                <p>
+                    <span id="lcp">La Chips Prod. 🄯
+                        <script>
+                            const currentTime = new Date();
+                            const year = currentTime.getFullYear()
+                            document.write(year);
+                        </script>
                         <span class="px-3">|</span>
+                    </span>
+                    <span id="mailFooter">
                         <span class="fw-bold">Contact </span>: <a href="mailto:mail@lesvieillessalopes.com">mail [at] lesvieillessalopes.com</a>
                     </span>
+                    <button class="scroll-to-top">
+                        <img src="img/arrow.svg" alt="">
+                    </button>
                 </p>
             </footer>
         </div>
@@ -186,7 +191,7 @@
             </div>
         </div>
 
-        <script src="js/lvs.js"></script>
+        <script type="module" src="js/lvs.js"></script>
 
     </body>
 
