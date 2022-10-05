@@ -309,5 +309,6 @@ function pushToTop(){
 // ---------------------------------------------------------------------------- Scrol to anchor (permet de ne pas afficher l'ancre nomée dans l'url)
 $("body").delegate( ".nav-link", "click", function() {
 	let id = $(this).attr('value');
-	$('html,body').animate({scrollTop: $(id).offset().top},'slow');
+	// ------------------------------------------------------------------------- On recupe la hauteur de l'ancre et on met -25 pour qu'elle ne soit pas collée en haut
+	$('html,body').animate({scrollTop: $(id).offset().top -25},'slow');
 })
